@@ -1,0 +1,208 @@
+body {
+   /*display: grid; 
+   grid-template-columns: 1 fr;
+   grid-template-rows: 50px 1fr 1fr 1fr 20px;
+    text-align: center; 
+    max-width: 300px; 
+    max-height: auto;*/
+    /*starting with mobile*/
+    display: flex; 
+    text-align: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    
+}
+
+header{
+  /*text-align: left;*/
+  text-align: center;  
+  font-size: 10px;
+  color: gray; 
+}
+span{
+  font-size: 16px;
+  font-weight: 600;
+  color: black; 
+}
+
+li{
+    /*display: inline;*/
+   list-style-type: none;
+    padding: 2px; 
+}
+h2{
+  font-size: 12px;
+  font-weight: 100; 
+}
+
+main {
+  margin: 20px;
+  text-align: center;
+  grid-row: 2 / span 2; 
+  width: auto; 
+  height: auto;  
+
+}
+.main-image {
+  justify-content: center;
+  height: autopx;
+  width: 300px; 
+  overflow: hidden; 
+  }
+
+p{
+  color: gray; 
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.gallery{ 
+  /*margin: -70px 0 0 0;*/  
+  display: flex; 
+  text-align: left; 
+  justify-content: space-between; 
+  gap: 10px 10px; 
+
+}
+h3{
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+}
+button{
+ background-color: white;
+ padding: 5px 20px 5px 20px;  
+}
+
+.social{  
+  /*display: grid;
+  grid-template-columns: 200px 200px 200px 200px;  
+  grid-template-rows: 200px 200px  
+  max-width: 300px: 
+  max-height: 800px;
+  margin: 50px;*/
+  display: flex; 
+  justify-content: space-between;
+  text-align: left;
+  
+}
+.instabox{
+display: none;
+width: 150px; 
+height: 150px; 
+padding: 5px;
+overflow: hidden; 
+}
+.instabox-one{
+  grid-column-start: 1;
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+  padding: 5px 20px; 
+}
+img{
+max-width: 100%; 
+max-height: auto; 
+grid-column-start:1; 
+grid-column-end: 4; 
+grid-row-start: 1;
+grid-row-end: 2; 
+}
+
+@media screen and (min-width: 500px) {
+  header{
+    text-align: left; 
+  }
+  
+  li{
+    display: inline; 
+    padding: 5px; 
+  }
+  .main-image{
+    width: 400px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 750px){
+  header{
+    text-align: left; 
+  }
+  li {
+    padding 10px; 
+  }
+  .connect{
+    text-align: right; 
+    margin: -15px 20px;
+  }
+  .main-image{
+    width: 650px;
+    height: auto; 
+  }
+   .social{  
+    /*display: grid;
+    grid-template-columns: 200px 200px 200px 200px;  
+    grid-template-rows: 200px 200px  
+    max-width: 300px: 
+    max-height: 800px;
+    margin: 50px;*/
+    display: flex; 
+    justify-content: space-between;
+    text-align: left;
+    
+  }
+  .instabox{
+    width: 150px; 
+    height: 150px; 
+    padding: 5px;
+    overflow: hidden; 
+    }
+  }
+  @media screen and (min-width: 950px){
+    body{
+      display: grid; 
+   grid-template-columns: 1 fr;
+   grid-template-rows: 50px 1fr 1fr 1fr 20px;
+    text-align: center; 
+    max-width: 900px
+    max-height: auto;
+    }
+    .social{  
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px;  
+      grid-template-rows: 200px 200px  
+      max-width: 900px: 
+      max-height: auto;
+      margin: 50px;
+    }
+    .instabox{
+    justify-content: end;
+    width: 200px; 
+    height: 200px; 
+    padding: 5px;
+    overflow: hidden; 
+    }
+    .instabox-one{
+      grid-column-start: 1;
+      grid-column-end: 3; 
+      grid-row-start: 1; 
+      grid-row-end: 3; 
+      padding: 5px 20px; 
+    }
+    .instabox-two{
+      grid-row: 1; 
+      grid-column: 3 / span 1; 
+      overflow: hidden; 
+    }
+    img{
+    max-width: 100%; 
+    max-height: auto; 
+    grid-column-start:1; 
+    grid-column-end: 4; 
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    }
+
+  }
+
+ 
