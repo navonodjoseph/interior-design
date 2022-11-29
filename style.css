@@ -131,6 +131,10 @@ grid-row-end: 2;
   li {
     padding 10px; 
   }
+  h2{
+    font-size: 16;
+    font-weight: 150;
+  }
   .connect{
     text-align: right; 
     margin: -15px 20px;
